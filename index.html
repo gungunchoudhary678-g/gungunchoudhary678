@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* NAVBAR */
+nav {
+    background: #0a1f8f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(#cde8f3, #e6f7ff);
+}
+
+/* CARD */
+.card {
+    background: white;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* BACKGROUND SECTION */
+.bg {
+    background: url('college.jpg') no-repeat center/cover;
+    padding: 60px 20px;
+}
+
+/* GLASS */
+.glass {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* COURSES */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+.course {
+    background: #cde8f3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+/* PROFILE */
+.profile {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* CONTACT */
+.contact i {
+    font-size: 25px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.contact i:hover {
+    color: #0a1f8f;
+}
+
+/* ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>My College</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero fade" id="home">
+    <h1>Welcome to My College 🎓</h1>
+    <p>I.P.(P.G) College Campus-2</p>
+    <p>This website is created by Gungun</p>
+</section>
+
+<div class="card fade" id="about">
+    <h2>About I.P.(P.G) College Campus-2, Bulandshahr</h2>
+
+    <p>
+        I.P.(P.G) College Campus-2, affiliated with CCS University Meerut,
+        is one of the leading institutions dedicated to providing quality
+        education and holistic development of students.
+    </p>
+<section class="bg">
+    <h2>Our Campus</h2>
+</section>
+    <p>
+        The campus offers a peaceful and motivating environment where students
+        can grow academically, socially, and professionally. With experienced
+        faculty and modern infrastructure, the college ensures a strong
+        foundation for future success.
+    </p>
+
+    <hr><br>
+
+    <h3>🎯 Vision</h3>
+    <p>
+        To develop skilled, responsible, and innovative individuals who can
+        contribute positively to society.
+    </p>
+
+    <h3>🚀 Mission</h3>
+    <p>
+        To provide quality education, practical knowledge, and career-oriented
+        skills to students for their bright future.
+    </p>
+
+    <h3>🏫 Facilities</h3>
+    <ul style="list-style:none; padding:0;">
+        <li>📚 Well-equipped Library</li>
+        <li>💻 Advanced Computer Labs</li>
+        <li>⚽ Sports Ground</li>
+        <li>🧠 Smart Classrooms</li> 
+    </ul>
+
+    <h3>🌟 Why Choose Our College?</h3>
+    <ul style="list-style:none; padding:0;">
+        <li>✔ Experienced and supportive faculty</li>
+        <li>✔ Focus on practical learning</li>
+        <li>✔ Career guidance and skill development</li>
+        <li>✔ Safe and friendly campus environment</li>
+    </ul>
+</div>
+
+<!-- COURSES -->
+<section class="bg" id="courses">
+    <div class="glass fade">
+        <h2 style="text-align:center;">Our Courses 🎓</h2>
+
+        <div class="courses">
+
+            <div class="course">
+                <h3>Computer Science</h3>
+                <p>BCA, M.Sc</p>
+            </div>
+
+            <div class="course">
+                <h3>Commerce</h3>
+                <p>BBA, B.Com</p>
+            </div>
+
+            <div class="course">
+                <h3>Education</h3>
+                <p>B.Ed, M.Ed</p>
+            </div>
+
+            <div class="course">
+                <h3>Science</h3>
+                <p>B.Sc, M.Sc</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div style="text-align:center;">
+    <h2>Campus Gallery 📸</h2>
+
+    <img src="college1.jpg" width="250" style="margin:10px; border-radius:10px;">
+    <img src="college2.jpg" width="250" style="margin:10px; border-radius:10px;">
+</div>
+
+</div>
+<!-- ABOUT ME -->
+<div class="card fade" style="text-align:center;">
+    <h2>About Me</h2>
+    <p>Hello! I'm Gungun 👋</p>
+    <p>BCA student | Web Developer</p>
+</div>
+
+<!-- CONTACT -->
+<div class="card contact fade" id="contact" style="text-align:center;">
+    <h2>Contact Me</h2>
+
+    <p>Email: gungunchoudhary678@email.com</p>
+
+  <a href="https://www.linkedin.com/in/Gungun chaudhary" target="_blank" class="btn">
+    <i class="fab fa-linkedin"></i> Connect on LinkedIn
+</a>
+
+<!-- JS ANIMATION -->
+<script>
+const faders = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 50){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
